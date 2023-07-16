@@ -157,7 +157,7 @@ const Navbar = () => {
               <Link
                 href='/about-us'
                 className={`${
-                  window.location.pathname === '/about-us'
+                  pathname === '/about-us'
                     ? 'bg-white border-black text-black font-medium'
                     : 'bg-bybikeBlack border-white text-white'
                 } flex text-center  border rounded-md items-center leading-5 h-14 px-4`}
@@ -167,7 +167,7 @@ const Navbar = () => {
               <Link
                 href='/team'
                 className={`${
-                  window.location.pathname === '/team'
+                  pathname === '/team'
                     ? 'bg-white border-black text-black font-medium'
                     : 'bg-bybikeBlack border-white text-white'
                 } flex text-center  border rounded-md items-center leading-5 h-14 px-4`}
