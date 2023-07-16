@@ -6,7 +6,8 @@ import { useRouter } from 'next/router';
 const Navbar = () => {
   const [selected, setSelected] = useState(null);
   const [menuOpened, setMenuOpened] = useState(false);
-  const { pathname } = useRouter();
+  const router = useRouter();
+  const { pathname } = router;
   const handleSelection = (int) => {
     if (selected === int) {
       setSelected(null);
