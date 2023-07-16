@@ -1,10 +1,12 @@
 'use client';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [selected, setSelected] = useState(null);
   const [menuOpened, setMenuOpened] = useState(false);
+  const { pathname } = useRouter();
   const handleSelection = (int) => {
     if (selected === int) {
       setSelected(null);
@@ -103,7 +105,7 @@ const Navbar = () => {
               <Link
                 href='/software'
                 className={`${
-                  window.location.pathname === '/software'
+                  pathname === '/software'
                     ? 'bg-white border-black  text-black font-medium'
                     : 'bg-bybikeBlack border-white text-white'
                 } flex text-center border rounded-md items-center leading-5 h-14 px-4`}
@@ -113,7 +115,7 @@ const Navbar = () => {
               <Link
                 href='/e-dock'
                 className={`${
-                  window.location.pathname === '/e-dock'
+                  pathname === '/e-dock'
                     ? 'bg-white border-black text-black font-medium'
                     : 'bg-bybikeBlack border-white text-white'
                 } flex text-center border rounded-md items-center leading-5 h-14 px-4`}
