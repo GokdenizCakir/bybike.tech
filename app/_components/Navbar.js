@@ -1,11 +1,11 @@
 'use client';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 const Navbar = () => {
   const [selected, setSelected] = useState(null);
   const [menuOpened, setMenuOpened] = useState(false);
-  const router = useRouter();
+  const pathname = usePathname();
   const handleSelection = (int) => {
     if (selected === int) {
       setSelected(null);
@@ -104,7 +104,7 @@ const Navbar = () => {
               <Link
                 href='/software'
                 className={`${
-                  router.push('/software')
+                  pathname === '/software'
                     ? 'bg-white border-black  text-black font-medium'
                     : 'bg-bybikeBlack border-white text-white'
                 } flex text-center border rounded-md items-center leading-5 h-14 px-4`}
@@ -114,7 +114,7 @@ const Navbar = () => {
               <Link
                 href='/e-dock'
                 className={`${
-                  router.push('/e-dock')
+                  pathname === '/e-dock'
                     ? 'bg-white border-black text-black font-medium'
                     : 'bg-bybikeBlack border-white text-white'
                 } flex text-center border rounded-md items-center leading-5 h-14 px-4`}
@@ -155,7 +155,7 @@ const Navbar = () => {
               <Link
                 href='/about-us'
                 className={`${
-                  router.push('/about-us')
+                  pathname === '/about-us'
                     ? 'bg-white border-black text-black font-medium'
                     : 'bg-bybikeBlack border-white text-white'
                 } flex text-center  border rounded-md items-center leading-5 h-14 px-4`}
@@ -165,7 +165,7 @@ const Navbar = () => {
               <Link
                 href='/team'
                 className={`${
-                  router.push('/team')
+                  pathname === '/team'
                     ? 'bg-white border-black text-black font-medium'
                     : 'bg-bybikeBlack border-white text-white'
                 } flex text-center  border rounded-md items-center leading-5 h-14 px-4`}
