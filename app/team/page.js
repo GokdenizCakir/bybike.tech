@@ -30,7 +30,7 @@ const page = () => {
             <div className='w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-4'>
               <img src='/picture_emre.png' alt='EMRE' />
             </div>
-            <h2 className='font-medium'>Emre Arslan</h2>
+            <h2 className='font-medium'>Emre Aslan</h2>
             <h3>Chief Technical Officer</h3>
           </div>
           <div className='flex flex-col items-center'>
@@ -75,7 +75,7 @@ const page = () => {
             <div className='w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-4'>
               <img src='/picture_emir_c.png' alt='EMIR CANTAY' />
             </div>
-            <h2 className='font-medium'>Emir Cantay</h2>
+            <h2 className='font-medium'>Emir Canatay</h2>
             <h3>Industrial Designer</h3>
           </div>
           <div className='flex flex-col items-center'>
@@ -91,7 +91,7 @@ const page = () => {
             <div className='w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-4'>
               <img src='/picture_berkay.png' alt='BERKAY' />
             </div>
-            <h2 className='font-medium'>Berkay Şengüz</h2>
+            <h2 className='font-medium'>Berkay Şenyüz</h2>
             <h3>Content Management Specialist</h3>
           </div>
           <div className='flex flex-col items-center'>

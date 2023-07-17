@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: 'ByBike Micromobility',
-  description: 'ByBike Micromobility | Electric Bike Rentals',
+  description: 'ByBike Micromobility | All-in-One Micromobility Solutions',
 };
 
 export default function RootLayout({ children }) {
