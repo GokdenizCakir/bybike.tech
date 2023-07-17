@@ -11,7 +11,9 @@ export default function Home() {
           <div className='flex flex-col sm:flex-row gap-20 justify-between'>
             <div className='flex flex-col'>
               <h2 className='text-6xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-medium'>
-                BUILD DEPLOY MANAGE
+                BUILD <br />
+                DEPLOY <br />
+                MANAGE
               </h2>
               <div>
                 <h3 className='text-white text-2xl sm:text-base my-12 sm:my-8'>
@@ -66,7 +68,7 @@ export default function Home() {
           href='/demo'
           className='bg-bybikeBlue text-white py-3 px-8 rounded-lg'
         >
-          View Demo
+          Request Demo
         </Link>
       </section>
 
