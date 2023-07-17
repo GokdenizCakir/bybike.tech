@@ -68,7 +68,7 @@ export default function Home() {
           href='/demo'
           className='bg-bybikeBlue text-white py-3 px-8 rounded-lg'
         >
-          Request Demo
+          Request a Demo
         </Link>
       </section>
 
