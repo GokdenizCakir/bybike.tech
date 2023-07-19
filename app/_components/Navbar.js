@@ -16,7 +16,10 @@ const Navbar = () => {
     <>
       <div className='fixed z-50 w-screen select-none -mt-[5rem] bg-bybikeBlack h-[5rem] tracking-wider px-2 md:px-12 lg:px-24 font-montserrat font-[200] flex items-center justify-between text-white'>
         <Link
-          onClick={() => setMenuOpened(false)}
+          onClick={() => {
+            setMenuOpened(false);
+            setSelected(null);
+          }}
           href='/'
           className='ml-3 mt-1 sm:ml-0 font-azonix text-2xl'
         >
@@ -95,7 +98,7 @@ const Navbar = () => {
               }`}
             >
               <Link
-                onClick={() => setMenuOpened(false)}
+                onClick={() => setSelected(false)}
                 href='/software'
                 className={`${
                   pathname === '/software'
@@ -106,7 +109,7 @@ const Navbar = () => {
                 Software Solutions
               </Link>
               <Link
-                onClick={() => setMenuOpened(false)}
+                onClick={() => setSelected(false)}
                 href='/e-dock'
                 className={`${
                   pathname === '/e-dock'
@@ -118,8 +121,11 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <Link href='/pricing' className='p-1'>
-            onClick={() => setMenuOpened(false)}
+          <Link
+            onClick={() => setSelected(false)}
+            href='/pricing'
+            className='p-1'
+          >
             Pricing
           </Link>
           <div
@@ -149,7 +155,7 @@ const Navbar = () => {
               }`}
             >
               <Link
-                onClick={() => setMenuOpened(false)}
+                onClick={() => setSelected(false)}
                 href='/about-us'
                 className={`${
                   pathname === '/about-us'
@@ -160,7 +166,7 @@ const Navbar = () => {
                 About Us
               </Link>
               <Link
-                onClick={() => setMenuOpened(false)}
+                onClick={() => setSelected(false)}
                 href='/team'
                 className={`${
                   pathname === '/team'
@@ -173,7 +179,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link
-            onClick={() => setMenuOpened(false)}
+            onClick={() => setSelected(false)}
             href='/demo'
             className='bg-bybikeBlue text-white py-2 px-4 font-medium rounded-lg'
           >
