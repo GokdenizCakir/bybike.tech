@@ -40,17 +40,17 @@ export default function Home() {
 
       {/* JOURNEY */}
       <section className='mt-32 sm:mt-20 flex flex-col items-center'>
-        <h1 className='text-bybikeBlue text-center font-bold text-4xl'>
+        <h1 className='text-bybikeBlue text-center font-bold text-4xl lg:text-5xl'>
           <span className='text-bybikeBlue/50'>GUIDING</span>
           <br />
           YOUR JOURNEY
         </h1>
-        <h3 className='text-sm sm:text-base'>
+        <h3 className='text-sm sm:text-base md:text-xl mt-4'>
           Unwavering Support from <span className='text-bybikeBlue'>Start</span>{' '}
           to <span className='text-bybikeBlue'>Finish</span>
         </h3>
         <br />
-        <h3 className='text-center text-sm sm:text-base mb-6 font-[300] w-11/12 sm:w-[40rem] md:w-[48rem]'>
+        <h3 className='text-center text-sm sm:text-base md:text-lg mb-6 font-[300] w-11/12 sm:w-[40rem] md:w-[48rem]'>
           We <span className='text-bybikeBlue'>accompany</span> you from the
           beginning to the end of your micromobility journey. <br />
           <br className='sm:hidden' />
@@ -239,23 +239,47 @@ export default function Home() {
             transportation through innovative solutions.
           </p>
         </div>
-        <div className='grid grid-cols-2 w-11/12 justify-center gap-8'>
-          <Link target='_blank' href='https://tr.nazali.com/' className='flex cursor-pointer justify-center items-center'>
+        <div className='grid grid-cols-2 w-11/12 lg:w-[30rem] justify-center gap-8'>
+          <Link
+            target='_blank'
+            href='https://tr.nazali.com/'
+            className='flex cursor-pointer justify-center items-center'
+          >
             <img src='/nazali.png' className='grayscale' alt='nazali' />
           </Link>
-          <Link target='_blank' href='https://okai.co/' className='flex cursor-pointer justify-center items-center'>
+          <Link
+            target='_blank'
+            href='https://okai.co/'
+            className='flex cursor-pointer justify-center items-center'
+          >
             <img src='/okai.png' className='grayscale' alt='nazali' />
           </Link>
-          <Link target='_blank' href='https://www.twilio.com/en-us' className='flex cursor-pointer justify-center items-center'>
+          <Link
+            target='_blank'
+            href='https://www.twilio.com/en-us'
+            className='flex cursor-pointer justify-center items-center'
+          >
             <img src='/twilio.png' className='grayscale w-40' alt='twilio' />
           </Link>
-          <Link target='_blank' href='https://www.parasut.com/' className='flex cursor-pointer justify-center items-center'>
+          <Link
+            target='_blank'
+            href='https://www.parasut.com/'
+            className='flex cursor-pointer justify-center items-center'
+          >
             <img src='/parasut.png' className='grayscale w-48' alt='parasut' />
           </Link>
-          <Link target='_blank' href='https://param.com.tr/' className='flex cursor-pointer justify-center items-center'>
+          <Link
+            target='_blank'
+            href='https://param.com.tr/'
+            className='flex cursor-pointer justify-center items-center'
+          >
             <img src='/param.png' className='grayscale w-40' alt='param' />
           </Link>
-          <Link target='_blank' href='https://aws.amazon.com/' className='flex cursor-pointer justify-center items-center'>
+          <Link
+            target='_blank'
+            href='https://aws.amazon.com/'
+            className='flex cursor-pointer justify-center items-center'
+          >
             <img src='/aws.png' className='grayscale w-20' alt='aws' />
           </Link>
         </div>
