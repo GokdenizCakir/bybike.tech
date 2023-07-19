@@ -145,7 +145,7 @@ const page = () => {
         </div>
       </section>
       <section className='flex justify-center'>
-        <div className='w-[96%] sm:w-[90%] flex flex-col items-center gap-12 sm:gap-0 sm:items-start sm:flex-row justify-between lg:w-[46rem] xl:w-[60rem] mt-36 lg:mt-52 '>
+        <div className='w-[96%] sm:w-[90%] flex flex-col items-center gap-12 sm:gap-0 lg:gap-12 sm:items-start sm:flex-row justify-between lg:w-[46rem] xl:w-[60rem] mt-36 lg:mt-52 '>
           <div>
             <h2 className='text-2xl text-center sm:text-start md:text-4xl font-semibold mb-6'>
               <span className='text-bybikeRed'>Operation</span> Apps
@@ -173,7 +173,7 @@ const page = () => {
           <h2 className='text-2xl text-center sm:text-start md:text-4xl font-semibold mb-8'>
             <span className='text-bybikeRed'>CRM</span> Dashboard
           </h2>
-          <h3 className='sm:w-1/2 text-center sm:text-start text-sm md:text-xl mb-10'>
+          <h3 className=' text-center sm:text-start text-sm md:text-xl mb-10'>
             Your customer support team will be able to manage all complaints
             from a <span className='text-bybikeRed italic'>single</span> panel.
             Your customer satisfaction will{' '}
