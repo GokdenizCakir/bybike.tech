@@ -9,9 +9,9 @@ const page = () => {
   const backRef = useRef();
 
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <section className='flex justify-center bg-gradient-to-b from-[#00A29D] to-white'>
-        <div className='relative w-[96%] md:w-11/12 h-[34rem] sm:h-[40rem] pt-12'>
+        <div className='relative w-[96%] md:w-11/12 xl:w-[80rem] h-[34rem] sm:h-[40rem] pt-12'>
           <div className='text-3xl sm:text-5xl lg:text-6xl text-center md:text-start font-medium'>
             <h2 className='underline decoration-bybikeRed md:no-underline'>
               FROM <br className='hidden md:block' />
@@ -35,7 +35,7 @@ const page = () => {
                 onClick={() =>
                   frontRef.current.scrollIntoView({
                     behavior: 'smooth',
-                    align: 'top',
+                    block: 'start',
                   })
                 }
                 className='bg-bybikeBlue cursor-pointer ring mt-28 sm:mt-44 ring-white w-8 max-h-8 aspect-square rounded-[50%]'
@@ -44,7 +44,7 @@ const page = () => {
                 onClick={() =>
                   backRef.current.scrollIntoView({
                     behavior: 'smooth',
-                    align: 'top',
+                    block: 'start',
                   })
                 }
                 className='bg-bybikeRed cursor-pointer ring mt-16 sm:mt-28 ring-white w-8 max-h-8 aspect-square rounded-[50%]'
@@ -55,20 +55,18 @@ const page = () => {
       </section>
 
       {/* FRONT STAGE */}
-      <h2
-        ref={frontRef}
-        className='tracking-wider text-center text-4xl mt-10 pt-6 font-medium'
-      >
+      <div ref={frontRef} className='h-[5rem]'></div>
+      <h2 className='tracking-wider text-center text-4xl pt-6 font-medium'>
         FRONT-STAGE
       </h2>
       <hr className='border border-bybikeBlue mt-4' />
-      <section className='mt-12 flex justify-center'>
-        <div className='flex justify-between w-[96%] items-center'>
+      <section className='-mt-12 sm:mt-12 flex justify-center items-center md:items-start md:flex-row gap-6 lg:gap-20'>
+        <div className='w-[96%] lg:w-[60rem] xl:w-[80rem] gap-12 lg:gap-2 flex flex-col-reverse items-center lg:flex-row justify-between'>
           <div className=''>
-            <h2 className='text-4xl mb-12 font-semibold mt-24'>
+            <h2 className='text-4xl hidden lg:block mb-12 font-semibold mt-24'>
               <span className='text-bybikeBlue '>Rider </span>App
             </h2>
-            <div className='flex gap-3 mb-10'>
+            <div className='flex justify-center sm:justify-start text-xs sm:text-base gap-1 sm:gap-3 mb-10'>
               <button
                 onClick={() => setActiveIndex(0)}
                 className={`${
@@ -117,103 +115,114 @@ const page = () => {
             />
           </div>
 
-          <div className='flex gap-8 mt-36 h-[30rem]'>
-            <img src='/platform_ss1.png' alt='ss1' />
-            <img src='/platform_ss2.png' alt='ss2' />
+          <div className='flex justify-between gap-2 md:gap-4 lg:gap-2 mt-36 h-[18rem] sm:h-[30rem]'>
+            <img className='h-full' src='/platform_ss1.png' alt='ss1' />
+            <img className='h-full' src='/platform_ss2.png' alt='ss2' />
           </div>
         </div>
       </section>
 
       {/* BACK STAGE */}
-      <h2
-        ref={backRef}
-        className='tracking-wider text-center text-4xl mt-24 pt-6 font-medium'
-      >
+      <div ref={backRef} className='h-[5rem]'></div>
+      <h2 className='tracking-wider text-center text-4xl mt-4 pt-6 font-medium'>
         BACK-STAGE
       </h2>
       <hr className='border border-bybikeRed mt-4 mb-24' />
-      <section className='px-48'>
-        <h2 className='text-4xl mb-2 font-semibold'>
-          <span className='text-bybikeRed'>Control Your </span>Fleet
-        </h2>
-        <p className='w-[34rem] mb-16'>
-          Track your fleet{' '}
-          <span className='italic text-bybikeRed'>second to second, </span>
-          without delay, and{' '}
-          <span className='italic text-bybikeRed'>maximize </span>your
-          operational efficiency with our fleet management software.
-        </p>
-
-        <img src='/platform_ss3.png' alt='ss3' />
-      </section>
-      <section className='rounded-[2rem] mt-36 mx-40 p-10 grid grid-cols-2 bg-[#F5F5F5]'>
-        <div>
-          <h2 className='text-4xl font-semibold mb-6'>
-            <span className='text-bybikeRed'>Operation</span> Apps
+      <section className='flex justify-center'>
+        <div className='w-[96%] sm:w-[90%] lg:w-[40rem] flex md:block flex-col items-center xl:w-[60rem]'>
+          <h2 className='text-2xl sm:text-3xl text-center md:text-start md:text-4xl mb-2 font-semibold'>
+            <span className='text-bybikeRed'>Control Your </span>Fleet
           </h2>
+          <p className='w-[21rem] sm:w-[34rem] text-sm sm:text-base text-center md:text-start mb-16'>
+            Track your fleet{' '}
+            <span className='italic text-bybikeRed'>second to second, </span>
+            without delay, and{' '}
+            <span className='italic text-bybikeRed'>maximize </span>your
+            operational efficiency with our fleet management software.
+          </p>
 
-          <h3 className='text-lg font-medium mb-6'>
-            Specially <span className='text-bybikeRed italic'>designed </span>
-            for your field team.
-          </h3>
-          <ul className='list-disc flex flex-col ml-4 gap-6'>
-            <li>Easy to Use</li>
-            <li>Multi Authorization for Each Team</li>
-            <li>Designed for Tracktion</li>
-          </ul>
-        </div>
-        <div className='flex justify-end'>
-          <img src='/software_ss1.png' className='w-5/12' alt='ss1' />
-          <img src='software_ss2.png' className='w-5/12' alt='ss2' />
+          <img src='/platform_ss3.png' alt='ss3' />
         </div>
       </section>
+      <section className='flex justify-center'>
+        <div className='w-[96%] sm:w-[90%] flex flex-col items-center gap-12 sm:gap-0 sm:items-start sm:flex-row justify-between lg:w-[46rem] xl:w-[60rem] mt-36 lg:mt-52 '>
+          <div>
+            <h2 className='text-2xl text-center sm:text-start md:text-4xl font-semibold mb-6'>
+              <span className='text-bybikeRed'>Operation</span> Apps
+            </h2>
 
-      <section className='rounded-[2rem] mt-36 mx-40 p-10 pt-12 bg-[#F5F5F5]'>
-        <h2 className='text-4xl font-semibold mb-8'>
-          <span className='text-bybikeRed'>CRM</span> Dashboard
-        </h2>
-        <h3 className='w-1/2 mb-10'>
-          Your customer support team will be able to manage all complaints from
-          a <span className='text-bybikeRed italic'>single</span> panel. Your
-          customer satisfaction will{' '}
-          <span className='text-bybikeRed italic'>skyrocket</span>.
-        </h3>
-        <img src='/software_ss3.png' alt='ss3' />
-      </section>
-
-      <section className='flex items-center justify-between mt-24 mb-24 px-48'>
-        <div>
-          <h2 className='text-4xl font-semibold mb-8'>
-            <span className='text-bybikeRed'>CMS</span> Dashboard
-          </h2>
-          <h3 className='text-lg font-medium mb-6'>
-            Manage your campains{' '}
-            <span className='text-bybikeRed italic'>easily </span>
-            from a <span className='text-bybikeRed italic'>single</span> panel.
-          </h3>
-          <ul className='list-disc flex flex-col ml-4 gap-4'>
-            <li>Sales Management</li>
-            <li>Marketing Management</li>
-          </ul>
-        </div>
-        <div className='p-10 py-24 rounded-3xl bg-[#ECECEC]'>
-          <h2 className='text-5xl font-medium mb-1'>COMING SOON</h2>
-          <h3 className='text-center mb-8'>Notify Me When It's Ready</h3>
-          <div className='flex h-12 items-center justify-center rounded-md overflow-hidden'>
-            <input
-              type='text'
-              placeholder='Enter a valid e-mail address'
-              className='focus:outline-none px-4 w-2/3 h-full text-sm'
-            />
-            <button className='bg-black h-full px-4 text-white'>
-              NOTIFY ME
-            </button>
+            <h3 className='text-base text-center sm:text-start md:text-lg font-medium mb-6'>
+              Specially <span className='text-bybikeRed italic'>designed </span>
+              for your field team.
+            </h3>
+            <ul className='list-disc text-sm md:text-base flex flex-col ml-4 gap-6'>
+              <li>Easy to Use</li>
+              <li>Multi Authorization for Each Team</li>
+              <li>Designed for Tracktion</li>
+            </ul>
+          </div>
+          <div className='flex justify-center md:gap-4 lg:gap-2 h-[20rem] xl:h-[36rem]'>
+            <img src='/software_ss1.png' className='h-full' alt='ss1' />
+            <img src='software_ss2.png' className='h-full' alt='ss2' />
           </div>
         </div>
       </section>
 
-      <section className='flex flex-col gap-4 mb-24 items-center'>
-        <h2 className='text-3xl font-semibold'>
+      <section className='flex justify-center'>
+        <div className='w-[96%] sm:w-[90%] flex sm:block flex-col items-center lg:w-[46rem] xl:w-[60rem] mt-36 lg:mt-52'>
+          <h2 className='text-2xl text-center sm:text-start md:text-4xl font-semibold mb-8'>
+            <span className='text-bybikeRed'>CRM</span> Dashboard
+          </h2>
+          <h3 className='sm:w-1/2 text-center sm:text-start text-sm md:text-base mb-10'>
+            Your customer support team will be able to manage all complaints
+            from a <span className='text-bybikeRed italic'>single</span> panel.
+            Your customer satisfaction will{' '}
+            <span className='text-bybikeRed italic'>skyrocket</span>.
+          </h3>
+          <img src='/software_ss3.png' alt='ss3' />
+        </div>
+      </section>
+
+      <section className='flex justify-center gap-4 mt-36 lg:mt-52'>
+        <div className='w-[96%] sm:w-[94%] flex flex-col md:flex-row gap-4 items-center justify-between lg:w-[55rem] xl:w-[60rem]'>
+          <div className='w-[26rem] flex md:block flex-col items-center'>
+            <h2 className='text-2xl md:text-4xl text-center md:text-start font-semibold mb-8'>
+              <span className='text-bybikeRed'>CMS</span> Dashboard
+            </h2>
+            <h3 className='text-sm md:text-lg font-medium mb-6'>
+              Manage your campains{' '}
+              <span className='text-bybikeRed italic'>easily </span>
+              from a <span className='text-bybikeRed italic'>single</span>{' '}
+              panel.
+            </h3>
+            <ul className='list-disc flex flex-col ml-4 gap-4'>
+              <li>Sales Management</li>
+              <li>Marketing Management</li>
+            </ul>
+          </div>
+          <div className='p-2 md:p-6 py-10 md:py-16 rounded-3xl bg-[#ECECEC]'>
+            <h2 className='text-2xl md:text-4xl text-center font-medium mb-1'>
+              COMING SOON
+            </h2>
+            <h3 className='text-sm md:text-base text-center mb-8'>
+              Notify Me When It's Ready
+            </h3>
+            <div className='flex h-12 items-center justify-center rounded-md overflow-hidden'>
+              <input
+                type='text'
+                placeholder='Enter a valid e-mail address'
+                className='focus:outline-none w-[14rem] px-4 h-full text-xs md:text-sm'
+              />
+              <button className='bg-black h-full min-w-[6rem] text-sm md:text-base px-1 md:px-4 text-white'>
+                NOTIFY ME
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='flex flex-col gap-4 my-24 items-center'>
+        <h2 className='text-xl md:text-3xl font-semibold'>
           OUR TEAM IS HERE TO <span className='text-bybikeBlue'>HELP</span>
         </h2>
         <Link

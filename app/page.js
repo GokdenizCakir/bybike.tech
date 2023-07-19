@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       {/* BANNER */}
-      <section className='h-[40rem] sm:h-[32rem] flex justify-center pt-20 bg-[url(/landing_background.png)]  bg-cover'>
-        <div className='w-10/12 sm:w-11/12 overflow-visible'>
-          <div className='flex flex-col sm:flex-row gap-20 justify-between'>
+      <section className='h-[40rem] sm:h-[32rem] flex justify-center pt-20 bg-[url(/landing_background.png)] bg-cover'>
+        <div className='w-10/12 sm:w-11/12 lg:w-[60rem] xl:w-[80rem] overflow-visible'>
+          <div className='flex flex-col sm:flex-row gap-12 justify-between'>
             <div className='flex flex-col'>
               <h2 className='text-6xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-medium'>
                 BUILD <br />
@@ -240,21 +240,24 @@ export default function Home() {
           </p>
         </div>
         <div className='grid grid-cols-2 w-11/12 justify-center gap-8'>
-          <div className='flex justify-center items-center'>
+          <Link target='_blank' href='https://tr.nazali.com/' className='flex cursor-pointer justify-center items-center'>
             <img src='/nazali.png' className='grayscale' alt='nazali' />
-          </div>
-          <div className='flex justify-center items-center'>
+          </Link>
+          <Link target='_blank' href='https://okai.co/' className='flex cursor-pointer justify-center items-center'>
+            <img src='/okai.png' className='grayscale' alt='nazali' />
+          </Link>
+          <Link target='_blank' href='https://www.twilio.com/en-us' className='flex cursor-pointer justify-center items-center'>
             <img src='/twilio.png' className='grayscale w-40' alt='twilio' />
-          </div>
-          <div className='flex justify-center items-center'>
+          </Link>
+          <Link target='_blank' href='https://www.parasut.com/' className='flex cursor-pointer justify-center items-center'>
             <img src='/parasut.png' className='grayscale w-48' alt='parasut' />
-          </div>
-          <div className='flex justify-center items-center'>
+          </Link>
+          <Link target='_blank' href='https://param.com.tr/' className='flex cursor-pointer justify-center items-center'>
             <img src='/param.png' className='grayscale w-40' alt='param' />
-          </div>
-          <div className='flex justify-center items-center'>
+          </Link>
+          <Link target='_blank' href='https://aws.amazon.com/' className='flex cursor-pointer justify-center items-center'>
             <img src='/aws.png' className='grayscale w-20' alt='aws' />
-          </div>
+          </Link>
         </div>
       </section>
 

@@ -12,19 +12,37 @@ const montserrat = Montserrat({
 export const metadata = {
   title: 'ByBike Micromobility',
   description: 'ByBike Micromobility | All-in-One Micromobility Solutions',
+  keywords: [
+    'micromobility',
+    'scooter',
+    'bike',
+    'bybike',
+    'green',
+    'eco',
+    'sustainable',
+    'sustainability',
+    'transportation',
+    'transport',
+    'mobility',
+    'electric',
+    'electricity',
+    'electric scooter',
+    'electric bike',
+    'all-in-one',
+  ],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={'bg-white overflow-hidden pt-[5rem] ' + montserrat.className}
+        className={
+          'bg-white overflow-x-hidden pt-[5rem] ' + montserrat.className
+        }
       >
-        <div className='overflow-y-scroll overflow-x-hidden h-[calc(100vh-5rem)]'>
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+        <Navbar /> 
+        {children}
+        <Footer />
       </body>
     </html>
   );

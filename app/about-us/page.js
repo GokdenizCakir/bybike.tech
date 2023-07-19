@@ -3,13 +3,13 @@ import React from 'react';
 
 const page = () => {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       {/* TITLE */}
-      <section className='bg-bybikeBlack text-white flex flex-col gap-2 justify-center items-center h-80'>
-        <h1 className='text-6xl font-medium'>
+      <section className='bg-bybikeBlack text-white flex flex-col gap-2 justify-center items-center h-60 sm:h-80'>
+        <h1 className='text-3xl sm:text-4xl md:text-6xl font-medium'>
           <span className='text-bybikeBlue'>ABOUT</span> US
         </h1>
-        <h3 className='italic text-xl tracking-widest'>
+        <h3 className='italic text-base text-center sm:text-start w-2/3 sm:w-auto sm:text-lg md:text-xl tracking-widest'>
           On a mission to empower{' '}
           <span className='not-italic'>Smart Cities.</span>
         </h3>

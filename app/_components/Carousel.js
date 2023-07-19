@@ -28,7 +28,7 @@ const Carousel = ({ activeIndex, setActiveIndex }) => {
   const halfwayIndex = Math.ceil(data.length / 2);
 
   // Usd to determine the height/spacing of each item
-  const itemHeight = 130;
+  const itemHeight = 118;
 
   // Used to determine at what point an item is moved from the top to the bottom
   const shuffleThreshold = halfwayIndex * itemHeight;
@@ -61,7 +61,7 @@ const Carousel = ({ activeIndex, setActiveIndex }) => {
   };
 
   return (
-    <section className='outer-container overflow-hidden w-[32rem] '>
+    <section className='outer-container overflow-hidden w-[21rem] sm:w-[28rem] '>
       <div className='carousel-wrapper overflow-hidden '>
         <div className='carousel-inner overflow-hidden flex flex-col '>
           {data.map((item, i) => (
@@ -78,8 +78,12 @@ const Carousel = ({ activeIndex, setActiveIndex }) => {
                 transform: `translateY(${determinePlacement(i)}px)`,
               }}
             >
-              <h2 className='text-4xl text-start mb-2'>{item.title}</h2>
-              <p className='text-start text-sm leading-5'>{item.description}</p>
+              <h2 className='text-2xl sm:text-4xl text-center lg:text-start mb-2'>
+                {item.title}
+              </h2>
+              <p className='text-center lg:text-start text-sm leading-5'>
+                {item.description}
+              </p>
             </button>
           ))}
         </div>
