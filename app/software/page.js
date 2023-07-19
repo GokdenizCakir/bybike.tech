@@ -134,7 +134,7 @@ const page = () => {
           <h2 className='text-2xl sm:text-3xl text-center md:text-start md:text-4xl mb-2 font-semibold'>
             <span className='text-bybikeRed'>Control Your </span>Fleet
           </h2>
-          <p className='text-sm sm:text-xl text-center md:text-start mb-16'>
+          <p className='text-sm sm:text-xl font-medium text-center md:text-start mb-16'>
             Track your fleet{' '}
             <span className='italic text-bybikeRed'>second to second, </span>
             without delay, and{' '}
