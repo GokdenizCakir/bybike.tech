@@ -23,13 +23,7 @@ const Navbar = () => {
           BYBIKE
         </Link>
         <div className='flex items-center gap-2'>
-          <Link
-            href='/demo'
-            oncl
-            className='bg-bybikeBlue rounded-sm sm:hidden text-xs py-[2px] px-[4px] font-semibold'
-          >
-            REQUEST A DEMO
-          </Link>
+          
           <div
             onClick={() => setMenuOpened(!menuOpened)}
             className={`mr-4 transition-all duration-300 rounded-md cursor-pointer sm:hidden`}
