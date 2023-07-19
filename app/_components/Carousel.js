@@ -81,7 +81,7 @@ const Carousel = ({ activeIndex, setActiveIndex }) => {
               <h2 className='text-2xl sm:text-4xl text-center lg:text-start mb-2'>
                 {item.title}
               </h2>
-              <p className='text-center lg:text-start text-sm leading-5'>
+              <p className='text-center lg:text-start text-sm leading-4'>
                 {item.description}
               </p>
             </button>
