@@ -1,10 +1,20 @@
 'use client';
 import React, { useState } from 'react';
 import * as yup from 'yup';
-import { Field, Formik } from 'formik';
+import { Formik } from 'formik';
 
 const page = () => {
   const [selected, setSelected] = useState([]);
+
+  const handleSubmit = (values) => {
+    fetch('https://formspree.io/f/xqkvkwdd', {
+      headers: { 'Content-Type': 'application/json' },
+      method: 'POST',
+      body: JSON.stringify(values),
+    }).then((res) => {
+      console.log(res.json());
+    });
+  };
 
   const validationSchema = yup.object().shape({
     firstName: yup.string().required('First name is required'),
@@ -12,18 +22,19 @@ const page = () => {
     city: yup.string().required('City is required'),
     country: yup.string().required('Country is required'),
     numberOfVehicles: yup.string().required('Number of vehicles is required'),
-    // vehicleTypes: yup
-    //   .array()
-    //   .of(yup.string())
-    //   .required('Vehicle types are required')
-    //   .required('Vehicle types are required'),
+    vehicleTypes: yup
+      .array()
+      .min(1, 'Vehicle types are required')
+      .of(yup.string())
+      .required('Vehicle types are required')
+      .required('Vehicle types are required'),
     email: yup.string().email().required('Email is required'),
     phone: yup.string().required('Phone number is required'),
     stage: yup.string().required(),
     more: yup.string(),
   });
 
-  const handleClick = (vehicle) => {
+  const handleClick = (vehicle, setFieldValue) => {
     let copy = [...selected];
     if (copy.includes(vehicle)) {
       copy = copy.filter((item) => item !== vehicle);
@@ -32,6 +43,7 @@ const page = () => {
       copy.push(vehicle);
       setSelected(copy);
     }
+    setFieldValue('vehicleTypes', copy);
   };
 
   return (
@@ -50,17 +62,15 @@ const page = () => {
             email: '',
             phone: '',
             stage: '',
-            // vehicleTypes: [],
+            vehicleTypes: null,
             more: '',
           }}
           validationSchema={validationSchema}
-          onSubmit={(values, { setSubmitting }) => {
-            console.log(values);
-          }}
+          onSubmit={(values) => handleSubmit(values)}
         >
           {(props) => (
             <form onSubmit={props.handleSubmit}>
-              <div className='grid gap-4 grid-cols-2'>
+              <div className='md:grid gap-4 grid-cols-2'>
                 <div>
                   <h2>
                     First Name<span className='text-red-500'>*</span>
@@ -113,7 +123,7 @@ const page = () => {
                     className='bg-[#EAEAEA]/20 w-56 focus:outline-none rounded-md p-1 px-2'
                   />
                 </div>
-                <div className='col-span-2'>
+                <div className='md:col-span-2'>
                   <h2>
                     How many vehicles will you start with?
                     <span className='text-red-500'>*</span>
@@ -153,7 +163,7 @@ const page = () => {
                     className='bg-[#EAEAEA]/20 w-56 focus:outline-none rounded-md p-1 px-2'
                   />
                 </div>
-                <div className='col-span-2'>
+                <div className='md:col-span-2'>
                   <h2>
                     Describe the stage you are currently in
                     <span className='text-red-500'>*</span>
@@ -174,7 +184,9 @@ const page = () => {
                   </h2>
                   <button
                     type='button'
-                    onClick={() => handleClick('E-Scooter')}
+                    onClick={() =>
+                      handleClick('E-Scooter', props.setFieldValue)
+                    }
                     className={`${
                       selected.includes('E-Scooter')
                         ? 'bg-bybikeBlue'
@@ -185,7 +197,7 @@ const page = () => {
                   </button>
                   <button
                     type='button'
-                    onClick={() => handleClick('E-Bike')}
+                    onClick={() => handleClick('E-Bike', props.setFieldValue)}
                     className={`${
                       selected.includes('E-Bike')
                         ? 'bg-bybikeBlue'
@@ -196,7 +208,7 @@ const page = () => {
                   </button>
                   <button
                     type='button'
-                    onClick={() => handleClick('Mix')}
+                    onClick={() => handleClick('Mix', props.setFieldValue)}
                     className={`${
                       selected.includes('Mix')
                         ? 'bg-bybikeBlue'
@@ -206,7 +218,7 @@ const page = () => {
                     Mix
                   </button>
                 </div>
-                <div className='col-span-2'>
+                <div className='md:col-span-2'>
                   <h2>Tell us more about your business</h2>
                   <textarea
                     onChange={props.handleChange}
@@ -219,8 +231,9 @@ const page = () => {
                 </div>
               </div>
               <button
+                disabled={props.isSubmitting || !props.isValid}
                 type='submit'
-                className='bg-bybikeRed rounded-sm py-2 px-6 mt-6'
+                className='bg-bybikeRed disabled:opacity-40 rounded-sm py-2 px-6 mt-6'
               >
                 SUBMIT
               </button>
