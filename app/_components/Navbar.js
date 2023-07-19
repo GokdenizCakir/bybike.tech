@@ -23,7 +23,6 @@ const Navbar = () => {
           BYBIKE
         </Link>
         <div className='flex items-center gap-2'>
-          
           <div
             onClick={() => setMenuOpened(!menuOpened)}
             className={`mr-4 transition-all duration-300 rounded-md cursor-pointer sm:hidden`}
@@ -96,6 +95,7 @@ const Navbar = () => {
               }`}
             >
               <Link
+                onClick={() => setMenuOpened(false)}
                 href='/software'
                 className={`${
                   pathname === '/software'
@@ -106,6 +106,7 @@ const Navbar = () => {
                 Software Solutions
               </Link>
               <Link
+                onClick={() => setMenuOpened(false)}
                 href='/e-dock'
                 className={`${
                   pathname === '/e-dock'
@@ -118,6 +119,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link href='/pricing' className='p-1'>
+            onClick={() => setMenuOpened(false)}
             Pricing
           </Link>
           <div
@@ -147,6 +149,7 @@ const Navbar = () => {
               }`}
             >
               <Link
+                onClick={() => setMenuOpened(false)}
                 href='/about-us'
                 className={`${
                   pathname === '/about-us'
@@ -157,6 +160,7 @@ const Navbar = () => {
                 About Us
               </Link>
               <Link
+                onClick={() => setMenuOpened(false)}
                 href='/team'
                 className={`${
                   pathname === '/team'

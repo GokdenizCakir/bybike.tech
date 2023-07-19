@@ -133,7 +133,7 @@ const page = () => {
           <h2 className='text-2xl sm:text-3xl text-center md:text-start md:text-4xl mb-2 font-semibold'>
             <span className='text-bybikeRed'>Control Your </span>Fleet
           </h2>
-          <p className='w-[21rem] sm:w-[34rem] text-sm sm:text-base text-center md:text-start mb-16'>
+          <p className='w-[21rem] sm:w-[34rem] text-sm sm:text-xl text-center md:text-start mb-16'>
             Track your fleet{' '}
             <span className='italic text-bybikeRed'>second to second, </span>
             without delay, and{' '}
@@ -151,11 +151,11 @@ const page = () => {
               <span className='text-bybikeRed'>Operation</span> Apps
             </h2>
 
-            <h3 className='text-base text-center sm:text-start md:text-lg font-medium mb-6'>
+            <h3 className='text-base text-center sm:text-start md:text-xl font-medium mb-6'>
               Specially <span className='text-bybikeRed italic'>designed </span>
               for your field team.
             </h3>
-            <ul className='list-disc text-sm md:text-base flex flex-col ml-4 gap-6'>
+            <ul className='list-disc text-sm md:text-lg lg:text-xl flex flex-col ml-4 gap-6'>
               <li>Easy to Use</li>
               <li>Multi Authorization for Each Team</li>
               <li>Designed for Tracktion</li>
@@ -173,7 +173,7 @@ const page = () => {
           <h2 className='text-2xl text-center sm:text-start md:text-4xl font-semibold mb-8'>
             <span className='text-bybikeRed'>CRM</span> Dashboard
           </h2>
-          <h3 className='sm:w-1/2 text-center sm:text-start text-sm md:text-base mb-10'>
+          <h3 className='sm:w-1/2 text-center sm:text-start text-sm md:text-xl mb-10'>
             Your customer support team will be able to manage all complaints
             from a <span className='text-bybikeRed italic'>single</span> panel.
             Your customer satisfaction will{' '}
@@ -189,13 +189,13 @@ const page = () => {
             <h2 className='text-2xl md:text-4xl text-center md:text-start font-semibold mb-8'>
               <span className='text-bybikeRed'>CMS</span> Dashboard
             </h2>
-            <h3 className='text-sm md:text-lg font-medium mb-6'>
+            <h3 className='text-sm md:text-lg lg:text-xl font-medium mb-6'>
               Manage your campains{' '}
               <span className='text-bybikeRed italic'>easily </span>
               from a <span className='text-bybikeRed italic'>single</span>{' '}
               panel.
             </h3>
-            <ul className='list-disc flex flex-col ml-4 gap-4'>
+            <ul className='list-disc flex lg:text-xl flex-col ml-4 gap-4'>
               <li>Sales Management</li>
               <li>Marketing Management</li>
             </ul>

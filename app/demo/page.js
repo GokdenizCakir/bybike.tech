@@ -47,8 +47,8 @@ const page = () => {
   };
 
   return (
-    <main className='bg-[url(/demo_background.png)] tracking-widest bg-cover flex justify-center p-24'>
-      <div className='bg-bybikeBlack shadow-2xl rounded-xl text-white px-12 py-16'>
+    <main className='bg-[url(/demo_background.png)] tracking-widest bg-cover flex justify-center py-24'>
+      <div className='bg-bybikeBlack shadow-2xl w-11/12 md:w-[35rem] rounded-xl text-white px-4 md:px-12 py-16'>
         <h2 className='text-4xl mb-10'>
           Let's Get <span className='text-bybikeBlue'>Going.</span>
         </h2>
@@ -70,7 +70,7 @@ const page = () => {
         >
           {(props) => (
             <form onSubmit={props.handleSubmit}>
-              <div className='md:grid gap-4 grid-cols-2'>
+              <div className='flex flex-col md:grid gap-4 grid-cols-2'>
                 <div>
                   <h2>
                     First Name<span className='text-red-500'>*</span>
@@ -81,7 +81,7 @@ const page = () => {
                     value={props.values.firstName}
                     name='firstName'
                     type='text'
-                    className='bg-[#EAEAEA]/20 w-56 focus:outline-none rounded-md p-1 px-2'
+                    className='bg-[#EAEAEA]/20 w-full md:w-56 focus:outline-none rounded-md p-1 px-2'
                   />
                 </div>
                 <div>
@@ -94,7 +94,7 @@ const page = () => {
                     value={props.values.lastName}
                     name='lastName'
                     type='text'
-                    className='bg-[#EAEAEA]/20 w-56 focus:outline-none rounded-md p-1 px-2'
+                    className='bg-[#EAEAEA]/20 w-full md:w-56 focus:outline-none rounded-md p-1 px-2'
                   />
                 </div>
                 <div>
@@ -107,7 +107,7 @@ const page = () => {
                     value={props.values.city}
                     name='city'
                     type='text'
-                    className='bg-[#EAEAEA]/20 w-56 focus:outline-none rounded-md p-1 px-2'
+                    className='bg-[#EAEAEA]/20 w-full md:w-56 focus:outline-none rounded-md p-1 px-2'
                   />
                 </div>
                 <div>
@@ -120,7 +120,7 @@ const page = () => {
                     value={props.values.country}
                     name='country'
                     type='text'
-                    className='bg-[#EAEAEA]/20 w-56 focus:outline-none rounded-md p-1 px-2'
+                    className='bg-[#EAEAEA]/20 w-full md:w-56 focus:outline-none rounded-md p-1 px-2'
                   />
                 </div>
                 <div className='md:col-span-2'>
@@ -147,7 +147,7 @@ const page = () => {
                     value={props.values.email}
                     name='email'
                     type='text'
-                    className='bg-[#EAEAEA]/20 w-56 focus:outline-none rounded-md p-1 px-2'
+                    className='bg-[#EAEAEA]/20 w-full md:w-56 focus:outline-none rounded-md p-1 px-2'
                   />
                 </div>
                 <div>
@@ -160,7 +160,7 @@ const page = () => {
                     value={props.values.phone}
                     name='phone'
                     type='text'
-                    className='bg-[#EAEAEA]/20 w-56 focus:outline-none rounded-md p-1 px-2'
+                    className='bg-[#EAEAEA]/20 w-full md:w-56 focus:outline-none rounded-md p-1 px-2'
                   />
                 </div>
                 <div className='md:col-span-2'>
@@ -191,7 +191,7 @@ const page = () => {
                       selected.includes('E-Scooter')
                         ? 'bg-bybikeBlue'
                         : 'bg-[#EAEAEA]/20'
-                    } w-56 flex justify-start pl-2 py-1 mb-1 rounded-md`}
+                    } w-full md:w-56 flex justify-start pl-2 py-1 mb-1 rounded-md`}
                   >
                     E-Scooter
                   </button>
@@ -202,7 +202,7 @@ const page = () => {
                       selected.includes('E-Bike')
                         ? 'bg-bybikeBlue'
                         : 'bg-[#EAEAEA]/20'
-                    } w-56 flex justify-start pl-2 py-1 mb-1 rounded-md`}
+                    } w-full md:w-56 flex justify-start pl-2 py-1 mb-1 rounded-md`}
                   >
                     E-Bike
                   </button>
@@ -213,7 +213,7 @@ const page = () => {
                       selected.includes('Mix')
                         ? 'bg-bybikeBlue'
                         : 'bg-[#EAEAEA]/20'
-                    } w-56 flex justify-start pl-2 py-1 mb-1 rounded-md`}
+                    } w-full md:w-56 flex justify-start pl-2 py-1 mb-1 rounded-md`}
                   >
                     Mix
                   </button>
