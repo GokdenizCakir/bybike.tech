@@ -19,26 +19,29 @@ const page = () => {
       <img src='/about_us_banner.png' alt='about us' />
 
       {/* OUR MISSION */}
-      <section className='p-20 flex flex-col items-center'>
+      <section className='flex py-16 flex-col items-center'>
         <h2 className='text-4xl font-medium'>
           Our <span className='text-bybikeBlue'>Mission</span>
         </h2>
-        <p className='w-2/3 my-6 leading-10 text-center text-2xl font-thin tracking-widest'>
+        <p className='my-6 w-[21rem] sm:w-[28rem] md:w-[40rem] lg:w-[60rem] leading-8 md:leading-10 text-center text-base sm:text-lg md:text-2xl font-light tracking-widest'>
           Transforming shared bicycle networks with cutting-edge products to
           maximize efficiency, user-friendliness, and profitability for
           micro-mobility operators and local governments
         </p>
-        <Link href='/team' className='text center py-2 px-10 bg-bybikeBlack text-white rounded-md'>
+        <Link
+          href='/team'
+          className='text center py-2 px-10 bg-bybikeBlack text-white rounded-md'
+        >
           MEET OUR TEAM
         </Link>
       </section>
 
       {/* WHAT'S DIFFERENT */}
       <section className='bg-[#F5F5F5] py-12 flex flex-col items-center mb-24'>
-        <h2 className='text-3xl font-light'>
+        <h2 className='text-2xl w-[20rem] md:w-auto text-center md:text-3xl font-light'>
           What's different when you work with us?
         </h2>
-        <div className='grid grid-cols-2 gap-16 font-light text-justify leading-7 w-1/2 mt-8'>
+        <div className='flex flex-col md:grid grid-cols-2 gap-16 font-light text-justify leading-7 w-11/12  md:w-[40rem] xl:w-[50rem] mt-8'>
           <p>
             We are developing software and hardware products{' '}
             <span className='text-bybikeBlue'>
@@ -62,11 +65,11 @@ const page = () => {
       <img src='/about_us_banner2.png' alt='about us' />
 
       {/* OUR VISION */}
-      <section className='p-16 flex flex-col items-center'>
+      <section className='my-12 flex flex-col items-center'>
         <h2 className='text-4xl font-medium'>
           Our <span className='text-bybikeBlue'>Vision</span>
         </h2>
-        <p className='w-2/3 my-6 leading-10 text-center text-2xl font-thin tracking-widest'>
+        <p className='w-11/12 md:w-[40rem] xl:w-[50rem] my-6 leading-8 md:leading-10 text-center text-base md:text-2xl font-light tracking-widest'>
           Empowering a cleaner and more sustainable world through electric
           micro-mobility solutions, revolutionizing transportation by offering
           efficient and accessible services to operator companies, anytime,
@@ -75,11 +78,11 @@ const page = () => {
       </section>
 
       {/* MOBILITY SOLUTIONS */}
-      <section className='bg-[#F5F5F5] py-12 flex flex-col items-center mb-32'>
-        <h2 className='text-3xl font-light'>
-          Clean and Accessible Mobility Solutions
+      <section className='bg-[#F5F5F5] py-12 flex flex-col items-center mb-24'>
+        <h2 className='text-2xl w-[20rem] md:w-auto text-center md:text-3xl font-light'>
+          Clean and Accessible Mobility Solutions.
         </h2>
-        <div className='grid grid-cols-2 gap-16 font-light text-justify leading-7 w-1/2 mt-8'>
+        <div className='flex flex-col md:grid grid-cols-2 gap-16 font-light text-justify leading-7 w-11/12 md:w-[40rem] xl:w-[50rem] mt-8'>
           <p>
             We believe that in order to make the world cleaner and more livable,
             energy consumption needs to be done in a clean manner. In this
@@ -101,48 +104,57 @@ const page = () => {
 
       {/* SOLUTION PARTNERS */}
       <section className='flex flex-col items-center mb-28'>
-        <h2 className='text-5xl font-medium mb-6'>
+        <h2 className='text-2xl sm:text-3xl md:text-5xl font-medium mb-6'>
           Our <span className='text-bybikeBlue'>Solution Partners</span>
         </h2>
-        <div className='flex justify-between gap-2 w-7/12'>
-          <div>
-            <img className='grayscale h-24' src='/nazali.png' alt='nazali' />
-            <h2 className='leading-4 font-medium tracking-widest'>Legal</h2>
-            <h2 className='leading-4 font-medium tracking-widest'>
-              Consultancy
-            </h2>
-          </div>
-          <div>
-            <img className='grayscale h-24' src='/parasut.png' alt='parasut' />
-            <h2 className='leading-4 font-medium tracking-widest'>
-              Online Invoice
-            </h2>
-            <h2 className='leading-4 font-medium tracking-widest'>Provider</h2>
-          </div>
-        </div>
-        <div className='flex justify-between gap-2 w-8/12 mt-8'>
-          <div>
-            <div className='h-24'>
-              <img className='grayscale w-80' src='/param.png' alt='param' />
-            </div>
-            <h2 className='leading-4 font-medium tracking-widest'>Payement</h2>
-            <h2 className='leading-4 font-medium tracking-widest'>Provider</h2>
-          </div>
-          <div>
-            <img className='grayscale h-24' src='/aws.png' alt='aws' />
-            <h2 className='leading-4 font-medium tracking-widest'>Cloud</h2>
-            <h2 className='leading-4 font-medium tracking-widest'>Server</h2>
-          </div>
-          <div>
-            <img className='grayscale h-24' src='/twilio.png' alt='twilio' />
-            <h2 className='leading-4 font-medium tracking-widest'>SMS</h2>
-            <h2 className='leading-4 font-medium tracking-widest'>Provider</h2>
-          </div>
+        <div className='grid grid-cols-2 w-11/12 lg:w-[60rem] justify-center gap-8'>
+          <Link
+            target='_blank'
+            href='https://tr.nazali.com/'
+            className='flex cursor-pointer justify-center items-center'
+          >
+            <img src='/nazali.png' className='grayscale' alt='nazali' />
+          </Link>
+          <Link
+            target='_blank'
+            href='https://okai.co/'
+            className='flex cursor-pointer justify-center items-center'
+          >
+            <img src='/okai.png' className='grayscale' alt='nazali' />
+          </Link>
+          <Link
+            target='_blank'
+            href='https://www.twilio.com/en-us'
+            className='flex cursor-pointer justify-center items-center'
+          >
+            <img src='/twilio.png' className='grayscale w-40' alt='twilio' />
+          </Link>
+          <Link
+            target='_blank'
+            href='https://www.parasut.com/'
+            className='flex cursor-pointer justify-center items-center'
+          >
+            <img src='/parasut.png' className='grayscale w-48' alt='parasut' />
+          </Link>
+          <Link
+            target='_blank'
+            href='https://param.com.tr/'
+            className='flex cursor-pointer justify-center items-center'
+          >
+            <img src='/param.png' className='grayscale w-40' alt='param' />
+          </Link>
+          <Link
+            target='_blank'
+            href='https://aws.amazon.com/'
+            className='flex cursor-pointer justify-center items-center'
+          >
+            <img src='/aws.png' className='grayscale w-20' alt='aws' />
+          </Link>
         </div>
       </section>
 
       <section className='mb-10'>
-        <div className='flex justify-center items-center gap-6 text-bybikeBlue font-medium text-5xl mb-6'>
+        <div className='flex justify-center items-center gap-1 sm:gap-6 text-bybikeBlue font-medium text-2xl sm:text-3xl md:text-5xl mb-6'>
           <div className='text-center'>
             <h2>Incubation</h2>
             <h2>Centers</h2>
@@ -154,7 +166,11 @@ const page = () => {
           </div>
         </div>
 
-        <img src="/accelerators.png" className='w-2/3 grayscale mx-auto' alt="accelerators" />
+        <img
+          src='/accelerators.png'
+          className='w-11/12 lg:w-[60rem] grayscale mx-auto'
+          alt='accelerators'
+        />
       </section>
     </main>
   );
