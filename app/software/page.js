@@ -17,8 +17,9 @@ const page = () => {
               FROM <br className='hidden md:block' />
               <span className='underline decoration-bybikeRed'>BACKSTAGE</span>
             </h2>
-            <h2 className='underline decoration-bybikeBlue md:no-underline'>
-              TO <br className='hidden md:block' />
+            <h2 className='underline flex justify-center md:block decoration-bybikeBlue md:no-underline'>
+              <h3 className='ml-[5px]'>TO </h3>
+              <h2 className='md:hidden'>&nbsp; </h2>
               <span className='underline decoration-bybikeBlue'>
                 FRONTSTAGE
               </span>
