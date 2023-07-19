@@ -185,7 +185,7 @@ const page = () => {
       </section>
 
       <section className='flex justify-center gap-4 mt-36 lg:mt-52'>
-        <div className='w-[96%] sm:w-[94%] flex flex-col md:flex-row gap-4 items-center justify-between lg:w-[55rem] xl:w-[60rem]'>
+        <div className='w-[96%] sm:w-[94%] flex flex-col md:flex-row gap-8 items-center justify-between lg:w-[55rem] xl:w-[60rem]'>
           <div className='w-[26rem] flex md:block flex-col items-center'>
             <h2 className='text-2xl md:text-4xl text-center md:text-start font-semibold mb-8'>
               <span className='text-bybikeRed'>CMS</span> Dashboard
