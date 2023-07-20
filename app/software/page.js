@@ -187,8 +187,8 @@ const page = () => {
             </ul>
           </div>
           <div className='flex justify-center md:gap-4 lg:gap-2 h-[20rem] xl:h-[36rem]'>
-            <img src='/software_ss1.png' className='h-full' alt='ss1' />
-            <img src='software_ss2.png' className='h-full' alt='ss2' />
+            <img src='/operation_1.png' className='h-full' alt='ss1' />
+            <img src='/operation_2.png' className='h-full' alt='ss2' />
           </div>
         </div>
       </section>
