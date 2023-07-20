@@ -152,7 +152,7 @@ export default function Home() {
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
               <h2 className='text-2xl font-bold text-[#00BBF2]'>ADVICE</h2>
-              <hr className='border border-[#00BBF2]' />
+              <hr className='border border-[#00BBF2] mb-2' />
               <p className='text-xl'>
                 We prepare an optimized operational plan, together we ensure you
                 reach maximum efficiency.
@@ -167,7 +167,7 @@ export default function Home() {
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
               <h2 className='text-2xl font-bold text-[#565CA9]'>HARDWARE</h2>
-              <hr className='border border-[#565CA9]' />
+              <hr className='border border-[#565CA9] mb-2' />
               <p className='text-xl'>
                 We assist you in the supply of necessary tools and equipment for
                 the operation.
@@ -182,7 +182,7 @@ export default function Home() {
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
               <h2 className='text-2xl font-bold text-[#7D53A2]'>SOFTWARE</h2>
-              <hr className='border border-[#7D53A2]' />
+              <hr className='border border-[#7D53A2] mb-2' />
               <p className='text-xl'>
                 We start your operation quickly with our end-to-end software
                 infrastructure.
@@ -197,7 +197,7 @@ export default function Home() {
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
               <h2 className='text-2xl font-bold text-[#EE4E9C]'>MANAGE</h2>
-              <hr className='border border-[#EE4E9C]' />
+              <hr className='border border-[#EE4E9C] mb-2' />
               <p className='text-xl'>
                 We start your operation quickly with our end-to-end software
                 infrastructure.
@@ -212,7 +212,7 @@ export default function Home() {
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
               <h2 className='text-2xl font-bold text-[#EF4962]'>SCALE</h2>
-              <hr className='border border-[#EF4962]' />
+              <hr className='border border-[#EF4962] mb-2' />
               <p className='text-xl'>
                 We start your operation quickly with our end-to-end software
                 infrastructure.

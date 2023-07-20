@@ -29,8 +29,8 @@ module.exports = {
         },
       },
       animation: {
-        glowUp: 'glow 8s ease-in-out infinite',
-        glowUpOdd: 'glowOdd 8s ease-in-out infinite',
+        glowUp: 'glow 4s ease-in-out infinite',
+        glowUpOdd: 'glowOdd 4s ease-in-out infinite',
       },
     },
   },
