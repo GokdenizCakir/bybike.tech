@@ -14,7 +14,7 @@ module.exports = {
       },
       fontFamily: {
         montserrat: ['var(--font-montserrat)'],
-        azonix: ["Azonix", "sans-serif"],
+        azonix: ['Azonix', 'sans-serif'],
       },
       keyframes: {
         glow: {
@@ -22,9 +22,15 @@ module.exports = {
           '50%': { transform: 'scale(1.08)' },
           '100%': { transform: 'scale(1)' },
         },
+        glowOdd: {
+          '0%': { transform: 'scale(1.08)' },
+          '50%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.08)' },
+        },
       },
       animation: {
         glowUp: 'glow 8s ease-in-out infinite',
+        glowUpOdd: 'glowOdd 8s ease-in-out infinite',
       },
     },
   },

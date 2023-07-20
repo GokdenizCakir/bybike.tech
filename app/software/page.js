@@ -1,10 +1,18 @@
 'use client';
 import Link from 'next/link';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Carousel from '../_components/Carousel';
 
 const page = () => {
   const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndexWithDelay, setActiveIndexWithDelay] = useState(1);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndexWithDelay(activeIndex);
+    }, 200);
+    return () => clearInterval(interval);
+  }, [activeIndex]);
+
   const frontRef = useRef();
   const backRef = useRef();
 
@@ -116,9 +124,21 @@ const page = () => {
             />
           </div>
 
-          <div className='flex justify-between gap-2 md:gap-4 lg:gap-2 mt-36 h-[18rem] sm:h-[30rem]'>
-            <img className='h-full' src='/platform_ss1.png' alt='ss1' />
-            <img className='h-full' src='/platform_ss2.png' alt='ss2' />
+          <div
+            className={`${
+              activeIndex === activeIndexWithDelay ? 'opacity-100' : 'opacity-0'
+            } transition-all duration-200 flex justify-between gap-2 md:gap-4 lg:gap-2 mt-36 h-[18rem] sm:h-[30rem]`}
+          >
+            <img
+              className='h-full'
+              src={`/platform_ss${activeIndexWithDelay}.png`}
+              alt='ss1'
+            />
+            <img
+              className='h-full'
+              src={`/platform_ss${activeIndexWithDelay}.png`}
+              alt='ss1'
+            />
           </div>
         </div>
       </section>

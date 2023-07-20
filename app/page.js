@@ -147,7 +147,7 @@ export default function Home() {
           <div className='flex flex-col items-center'>
             <img
               src='/step_01.png'
-              className='w-2/3 sm:w-[40%]'
+              className='w-2/3 sm:w-[40%] animate-glowUp'
               alt='step_01'
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
@@ -162,7 +162,7 @@ export default function Home() {
           <div className='flex flex-col items-center'>
             <img
               src='/step_02.png'
-              className='w-2/3 sm:w-[40%]'
+              className='w-2/3 sm:w-[40%] animate-glowUpOdd'
               alt='step_02'
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
@@ -177,7 +177,7 @@ export default function Home() {
           <div className='flex flex-col items-center'>
             <img
               src='/step_03.png'
-              className='w-2/3 sm:w-[40%]'
+              className='w-2/3 sm:w-[40%] animate-glowUp'
               alt='step_03'
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
@@ -192,7 +192,7 @@ export default function Home() {
           <div className='flex flex-col items-center'>
             <img
               src='/step_04.png'
-              className='w-2/3 sm:w-[40%]'
+              className='w-2/3 sm:w-[40%] animate-glowUpOdd'
               alt='step_04'
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
@@ -207,7 +207,7 @@ export default function Home() {
           <div className='flex flex-col items-center'>
             <img
               src='/step_05.png'
-              className='w-2/3 sm:w-[40%]'
+              className='w-2/3 sm:w-[40%] animate-glowUp'
               alt='step_05'
             />
             <div className='text-center -mt-6 w-10/12 sm:w-8/12'>
