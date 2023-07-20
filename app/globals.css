@@ -3,8 +3,8 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@200;400;500;700&display=swap');
 @font-face {
-  font-family: "AZONIX";
-  src: url("../public/Azonix.otf");
+  font-family: 'AZONIX';
+  src: url('../public/Azonix.otf');
 }
 
 body {
@@ -18,6 +18,10 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+mark {
+  transform: translate3d(0, 0, 0);
 }
 
 .outer-container .carousel-wrapper {
@@ -75,17 +79,17 @@ body {
   transition: transform 0.4s ease, opacity 0.6s ease;
 }
 
-.carousel-item.active{
+.carousel-item.active {
   opacity: 1;
 }
 
-.carousel-item.active h2{
+.carousel-item.active h2 {
   opacity: 1;
-  color: #6C87DE;
+  color: #6c87de;
   font-weight: 800;
 }
 
-.carousel-item.active p{
+.carousel-item.active p {
   opacity: 1;
   font-weight: 500;
 }

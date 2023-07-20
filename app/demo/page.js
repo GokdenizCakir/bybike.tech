@@ -230,13 +230,40 @@ const page = () => {
                   ></textarea>
                 </div>
               </div>
-              <button
-                disabled={props.isSubmitting || !props.isValid}
-                type='submit'
-                className='bg-bybikeRed disabled:opacity-40 rounded-sm py-2 px-6 mt-6'
-              >
-                SUBMIT
-              </button>
+              {props.isSubmitting ? (
+                <div className='flex gap-4 items-center mt-6'>
+                  <div className='flex px-10 rounded-sm justify-center bg-bybikeBlue items-center'>
+                    <svg className='w-9' viewBox='0 -0.5 25 25' fill='none'>
+                      <g id='SVGRepo_bgCarrier' stroke-width='0'></g>
+                      <g
+                        id='SVGRepo_tracerCarrier'
+                        stroke-linecap='round'
+                        stroke-linejoin='round'
+                      ></g>
+                      <g id='SVGRepo_iconCarrier'>
+                        <path
+                          d='M5.5 12.5L10.167 17L19.5 8'
+                          stroke='#ffffff'
+                          stroke-width='1.5'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <h2 className='text-white text-xs'>
+                    We will contact you as soon as possible
+                  </h2>
+                </div>
+              ) : (
+                <button
+                  disabled={props.isSubmitting || !props.isValid}
+                  type='submit'
+                  className='bg-bybikeRed disabled:opacity-40 rounded-sm py-2 px-6 mt-6'
+                >
+                  SUBMIT
+                </button>
+              )}
             </form>
           )}
         </Formik>
