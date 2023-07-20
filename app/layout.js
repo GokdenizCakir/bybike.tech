@@ -30,6 +30,7 @@ export const metadata = {
     'electric bike',
     'all-in-one',
   ],
+  
 };
 
 export default function RootLayout({ children }) {

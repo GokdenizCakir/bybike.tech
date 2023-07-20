@@ -127,16 +127,16 @@ const page = () => {
           <div
             className={`${
               activeIndex === activeIndexWithDelay ? 'opacity-100' : 'opacity-0'
-            } transition-all duration-200 flex justify-between gap-2 md:gap-4 lg:gap-2 mt-36 h-[18rem] sm:h-[30rem]`}
+            } transition-all duration-200 flex justify-between gap-2 md:gap-4 lg:gap-2 mt-20 sm:mt-36 h-[20rem] sm:h-[36rem]`}
           >
             <img
-              className='h-full'
-              src={`/platform_ss${activeIndexWithDelay}.png`}
+              className='w-[8rem] sm:w-[14rem] h-auto'
+              src={`/software_ss${activeIndexWithDelay}_1.png`}
               alt='ss1'
             />
             <img
-              className='h-full'
-              src={`/platform_ss${activeIndexWithDelay}.png`}
+              className='w-[8rem] sm:w-[14rem]'
+              src={`/software_ss${activeIndexWithDelay}_2.png`}
               alt='ss1'
             />
           </div>
