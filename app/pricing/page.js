@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import React from 'react';
 
@@ -339,14 +340,14 @@ const page = () => {
             <h4 className='text-center text-sm sm:text-base'>
               Predict your company's revenue just by typing numbers
             </h4>
-            <div className='mt-12 bg-bybikeBlack w-[20.4rem] sm:w-[32rem] md:w-[40rem] rounded-[2rem] py-12 text-white'>
+            <div className='mt-12 bg-bybikeBlack w-[20.4rem] sm:w-[32rem] md:w-[40rem] rounded-[2rem] py-4 sm:py-12 text-white'>
               <h2 className='text-2xl sm:text-4xl text-center font-medium'>
                 COMING SOON
               </h2>
               <h4 className='text-center text-sm font-light mt-1'>
                 Notify Me When It's Ready
               </h4>
-              <div className='flex justify-center mt-12'>
+              <div className='flex justify-center my-4 sm:mt-12'>
                 <div className='flex h-12 px-2 items-center justify-center rounded-md overflow-hidden'>
                   <input
                     type='text'

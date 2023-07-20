@@ -49,7 +49,7 @@ const page = () => {
               Chief Design Officer
             </h3>
           </div>
-          <div className='flex justify-around col-span-2 sm:col-span-3'>
+          <div className='hidden sm:flex justify-around col-span-2 sm:col-span-3'>
             <div className='flex flex-col items-center'>
               <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
                 <img src='/picture_eren.png' alt='EREN' />
@@ -60,6 +60,28 @@ const page = () => {
               </h3>
             </div>
             <div className='flex flex-col items-center'>
+              <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
+                <img src='/picture_emre_h.png' alt='EMRE HARBUT' />
+              </div>
+              <h2 className='text-sm sm:text-base font-medium'>
+                Emre Harbutoğlu
+              </h2>
+              <h3 className='text-xs text-center sm:text-base'>
+                Software Team Lead
+              </h3>
+            </div>
+          </div>
+          <div className='flex sm:hidden flex-col items-center'>
+            <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
+              <img src='/picture_eren.png' alt='EREN' />
+            </div>
+            <h2 className='text-sm sm:text-base font-medium'>Eren Dağsuyu</h2>
+            <h3 className='text-xs text-center sm:text-base'>
+              Chief Operation Officer
+            </h3>
+          </div>
+          <div className='flex col-span-2 justify-center'>
+            <div className='flex sm:hidden flex-col items-center'>
               <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
                 <img src='/picture_emre_h.png' alt='EMRE HARBUT' />
               </div>
