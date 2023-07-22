@@ -156,7 +156,7 @@ const page = () => {
             </div>
             <h2 className='text-sm sm:text-base font-medium'>Çağan Kutlay</h2>
             <h3 className='text-xs text-center sm:text-base'>
-              Jr. Mechanical Engineer
+              Mechanical Engineer
             </h3>
           </div>
           <div className='flex flex-col items-center'>
@@ -176,7 +176,7 @@ const page = () => {
               Tolga Selimoğlu
             </h2>
             <h3 className='text-xs text-center sm:text-base'>
-              Jr. Mechatronics Engineer
+              Mechatronics Engineer
             </h3>
           </div>
           <div className='flex flex-col items-center'>
