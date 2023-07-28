@@ -107,49 +107,89 @@ const page = () => {
         <h2 className='text-2xl sm:text-3xl md:text-5xl font-medium mb-6'>
           Our <span className='text-bybikeBlue'>Solution Partners</span>
         </h2>
-        <div className='grid grid-cols-2 w-11/12 lg:w-[60rem] justify-center gap-8'>
-          <Link
-            target='_blank'
-            href='https://tr.nazali.com/'
-            className='flex cursor-pointer justify-center items-center'
-          >
-            <img src='/nazali.png' className='grayscale' alt='nazali' />
-          </Link>
-          <Link
-            target='_blank'
-            href='https://okai.co/'
-            className='flex cursor-pointer justify-center items-center'
-          >
-            <img src='/okai.png' className='grayscale' alt='nazali' />
-          </Link>
-          <Link
-            target='_blank'
-            href='https://www.twilio.com/en-us'
-            className='flex cursor-pointer justify-center items-center'
-          >
-            <img src='/twilio.png' className='grayscale w-40' alt='twilio' />
-          </Link>
-          <Link
-            target='_blank'
-            href='https://www.parasut.com/'
-            className='flex cursor-pointer justify-center items-center'
-          >
-            <img src='/parasut.png' className='grayscale w-48' alt='parasut' />
-          </Link>
-          <Link
-            target='_blank'
-            href='https://param.com.tr/'
-            className='flex cursor-pointer justify-center items-center'
-          >
-            <img src='/param.png' className='grayscale w-40' alt='param' />
-          </Link>
-          <Link
-            target='_blank'
-            href='https://aws.amazon.com/'
-            className='flex cursor-pointer justify-center items-center'
-          >
-            <img src='/aws.png' className='grayscale w-20' alt='aws' />
-          </Link>
+        <div className='grid grid-cols-2 font-semibold w-11/12 lg:w-[60rem] justify-center gap-8'>
+          <div className='flex justify-center'>
+            <Link
+              target='_blank'
+              href='https://tr.nazali.com/'
+              className='flex flex-col cursor-pointer'
+            >
+              <img
+                src='/nazali.png'
+                className='grayscale mb-3 w-60'
+                alt='nazali'
+              />
+              Legal <br /> Consultancy
+            </Link>
+          </div>
+          <div className='flex justify-center'>
+            <Link
+              target='_blank'
+              href='https://eu.okai.co/'
+              className='flex flex-col cursor-pointer'
+            >
+              <img
+                src='/okai.png'
+                className='grayscale mb-3 w-60'
+                alt='nazali'
+              />
+              Manufacturer
+            </Link>
+          </div>
+          <div className='flex justify-center'>
+            <Link
+              target='_blank'
+              href='https://www.twilio.com/en-us'
+              className='flex flex-col cursor-pointer'
+            >
+              <img
+                src='/twilio.png'
+                className='grayscale mb-3 w-60'
+                alt='twilio'
+              />
+              SMS <br /> Provider
+            </Link>
+          </div>
+          <div className='flex justify-center'>
+            <Link
+              target='_blank'
+              href='https://www.parasut.com/'
+              className='flex flex-col cursor-pointer'
+            >
+              <img
+                src='/parasut.png'
+                className='grayscale mb-3 w-60'
+                alt='parasut'
+              />
+              Online Invoice <br /> Provider
+            </Link>
+          </div>
+          <div className='flex justify-center'>
+            <Link
+              target='_blank'
+              href='https://param.com.tr/'
+              className='flex flex-col cursor-pointer'
+            >
+              <img
+                src='/param.png'
+                className='grayscale mb-3 w-60'
+                alt='param'
+              />
+              Payement <br /> Provider
+            </Link>
+          </div>
+          <div className='flex sm:justify-center'>
+            <Link
+              target='_blank'
+              href='https://aws.amazon.com/'
+              className='flex flex-col cursor-pointer'
+            >
+              <div className='sm:w-60'>
+                <img src='/aws.png' className='grayscale mb-3 w-20' alt='aws' />
+                Cloud <br /> Server
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
