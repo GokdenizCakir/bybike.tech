@@ -250,7 +250,7 @@ export default function Home() {
             </Link>
             <Link
               target='_blank'
-              href='https://okai.co/'
+              href='https://eu.okai.co/'
               className='flex cursor-pointer justify-center items-center'
             >
               <img src='/okai.png' className='grayscale' alt='nazali' />
