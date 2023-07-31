@@ -120,8 +120,8 @@ export default function Home() {
               <div className='flex gap-2'>
                 <div className='border border-[#EE4E9C]'></div>
                 <p className='text-sm lg:text-base leading-5'>
-                  We assist you in the supply of necessary tools and equipment
-                  for the operation.
+                  After the installation is completely finished, we assist in
+                  optimizing the operation for the first 2-3 weeks.
                 </p>
               </div>
             </div>
@@ -199,8 +199,8 @@ export default function Home() {
               <h2 className='text-2xl font-bold text-[#EE4E9C]'>MANAGE</h2>
               <hr className='border border-[#EE4E9C] mb-2' />
               <p className='text-xl'>
-                We start your operation quickly with our end-to-end software
-                infrastructure.
+                After the installation is completely finished, we assist in
+                optimizing the operation for the first 2-3 weeks.
               </p>
             </div>
           </div>
@@ -214,8 +214,8 @@ export default function Home() {
               <h2 className='text-2xl font-bold text-[#EF4962]'>SCALE</h2>
               <hr className='border border-[#EF4962] mb-2' />
               <p className='text-xl'>
-                We start your operation quickly with our end-to-end software
-                infrastructure.
+                We support the regulatory and efficient scaling of your
+                operation.
               </p>
             </div>
           </div>
