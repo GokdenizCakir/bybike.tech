@@ -166,7 +166,7 @@ const page = () => {
             operational efficiency with our fleet management software.
           </p>
 
-          <img src='/platform_ss3.png' alt='ss3' />
+          <img src='/fleet_management.png' alt='ss3' />
         </div>
       </section>
       <section className='flex justify-center'>
