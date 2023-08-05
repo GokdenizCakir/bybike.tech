@@ -104,7 +104,7 @@ const page = () => {
 
       {/* SOLUTION PARTNERS */}
       <section className='flex flex-col items-center mb-28'>
-        <h2 className='text-2xl sm:text-3xl md:text-5xl font-medium mb-6'>
+        <h2 className='text-2xl sm:text-3xl md:text-5xl font-medium mb-16'>
           Our <span className='text-bybikeBlue'>Solution Partners</span>
         </h2>
         <div className='grid grid-cols-2 font-semibold w-11/12 lg:w-[60rem] justify-center gap-8'>
