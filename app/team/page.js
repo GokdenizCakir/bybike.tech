@@ -35,30 +35,19 @@ const page = () => {
             </div>
             <h2 className='text-sm sm:text-base font-medium'>Emre Aslan</h2>
             <h3 className='text-xs text-center sm:text-base'>
-              Chief Technical Officer
+              Research and Development Manager
             </h3>
           </div>
           <div className='flex flex-col items-center'>
             <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
-              <img src='/picture_emir.png' alt='EMIR' />
+              <img src='/picture_eren.png' alt='EREN' />
             </div>
-            <h2 className='text-sm sm:text-base font-medium'>
-              Emir Murad Seymen
-            </h2>
+            <h2 className='text-sm sm:text-base font-medium'>Eren Dağsuyu</h2>
             <h3 className='text-xs text-center sm:text-base'>
-              Chief Design Officer
+              Chief Operation Officer
             </h3>
           </div>
-          <div className='hidden sm:flex justify-around col-span-2 sm:col-span-3'>
-            <div className='flex flex-col items-center'>
-              <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
-                <img src='/picture_eren.png' alt='EREN' />
-              </div>
-              <h2 className='text-sm sm:text-base font-medium'>Eren Dağsuyu</h2>
-              <h3 className='text-xs text-center sm:text-base'>
-                Chief Operation Officer
-              </h3>
-            </div>
+          <div className='hidden sm:flex justify-center col-span-2 sm:col-span-3'>
             <div className='flex flex-col items-center'>
               <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
                 <img src='/picture_emre_h.png' alt='EMRE HARBUT' />
@@ -67,7 +56,7 @@ const page = () => {
                 Emre Harbutoğlu
               </h2>
               <h3 className='text-xs text-center sm:text-base'>
-                Software Team Lead
+                Chief Technical Officer
               </h3>
             </div>
           </div>
@@ -89,7 +78,7 @@ const page = () => {
                 Emre Harbutoğlu
               </h2>
               <h3 className='text-xs text-center sm:text-base'>
-                Software Team Lead
+                Chief Technical Officer
               </h3>
             </div>
           </div>
@@ -101,35 +90,6 @@ const page = () => {
         </h2>
         <hr className='border border-bybikeRed' />
         <div className='grid grid-cols-2 sm:grid-cols-3 gap-8 py-10'>
-          <div className='flex flex-col items-center'>
-            <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
-              <img src='/picture_selin.png' alt='SELIN' />
-            </div>
-            <h2 className='text-sm sm:text-base font-medium'>Selin Lochner</h2>
-            <h3 className='text-xs text-center sm:text-base'>
-              Industrial Designer
-            </h3>
-          </div>
-          <div className='flex flex-col items-center'>
-            <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
-              <img src='/picture_emir_c.png' alt='EMIR CANTAY' />
-            </div>
-            <h2 className='text-sm sm:text-base font-medium'>Emir Canatay</h2>
-            <h3 className='text-xs text-center sm:text-base'>
-              Industrial Designer
-            </h3>
-          </div>
-          <div className='flex flex-col items-center'>
-            <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
-              <img src='/picture_hilal.png' alt='HILAL' />
-            </div>
-            <h2 className='text-sm sm:text-base font-medium'>
-              Hilal Bayrakdar
-            </h2>
-            <h3 className='text-xs text-center sm:text-base'>
-              Industrial Designer intern
-            </h3>
-          </div>
           <div className='flex flex-col items-center'>
             <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
               <img src='/picture_berkay.png' alt='BERKAY' />
@@ -210,7 +170,7 @@ const page = () => {
               Backend Developer
             </h3>
           </div>
-          <div className='flex flex-col items-center'>
+          <div className='sm:flex hidden flex-col items-center'>
             <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
               <img src='/picture_gokdeniz.png' alt='GOKDENIZ' />
             </div>
@@ -219,13 +179,15 @@ const page = () => {
               Frontend Developer
             </h3>
           </div>
-          <div className='flex col-span-2 sm:col-span-3 flex-col items-center'>
+        </div>
+        <div className='justify-center mb-10 flex sm:hidden'>
+          <div className='flex flex-col items-center'>
             <div className='w-40 md:w-60 lg:w-80 aspect-square rounded-lg overflow-hidden bg-[#585858] mb-2'>
-              <img src='/picture_atakan.png' alt='ATAKAN' />
+              <img src='/picture_gokdeniz.png' alt='GOKDENIZ' />
             </div>
-            <h2 className='text-sm sm:text-base font-medium'>Atakan Arslan</h2>
+            <h2 className='text-sm sm:text-base font-medium'>Gökdeniz Çakır</h2>
             <h3 className='text-xs text-center sm:text-base'>
-              Mobile Developer
+              Frontend Developer
             </h3>
           </div>
         </div>
